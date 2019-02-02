@@ -1,0 +1,26 @@
+{
+  "author": {
+    "name": "Doru Moraru",
+    "url": "http://doru-moraru.com"
+  },
+  "deprecated": false,
+  "description": "A Ionic/Cordova Honeywell Scanner Simplified Plugin for the built-in barcodes scanner.",
+  "homepage": "http://doru-moraru.com",
+  "keywords": [
+    "ionic",
+    "cordova",
+    "honeywell",
+    "barcodes"
+  ],
+  "license": "MIT",
+  "main": "www/jpneywell.js",
+  "name": "cordova-honeywell-scanner-simplified",
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.org/dorumoraru/cordova-honeywell-scanner-simplified"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.1.2"
+}
