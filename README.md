@@ -12,8 +12,8 @@ Honeywell ScanPal EDA50
 ## Usage
 ```javascript
 window.plugins.honeywell.listen(data => {
-    console.log(`Scanned: ${data}`);
-  }, error => {
-   console.log(`Error occured: ${error}`);
-  });
+  console.log(`Scanned: ${data}`);
+}, error => {
+  console.log(`Error occured: ${error}`);
+});
 ```
