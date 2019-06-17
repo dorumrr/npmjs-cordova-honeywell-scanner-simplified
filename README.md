@@ -1,5 +1,5 @@
 # cordova-honeywell-scanner-simplified
-A Ionic/Cordova Honeywell Scanner Simplified Plugin for the buil-in barcodes scanner.
+Ionic/Cordova Honeywell Scanner Simplified Plugin for the built-in barcodes scanner.
 
 Install
 -------
@@ -14,6 +14,8 @@ Tested successfully with
 - Honeywell ScanPal EDA50 - Android 4.4 and 7 (confirmed by [dorumrr](https://github.com/dorumrr))
 
 - Honeywell CT60 - Android 8.1.0 (confirmed by [andreicocari](https://github.com/andreicocari))
+
+- Honeywell CT50 Android 6.0.1 (confirmed by [pklaes](https://github.com/pklaes))
 
 **Please [notify](https://github.com/dorumrr/npmjs-cordova-honeywell-scanner-simplified/issues/2) if you have tested with other Honeywell devices!**
 
@@ -80,8 +82,9 @@ For a quick implementation, you can check out the Ionic Test Application [here](
 
 ---
 
-```
+
 HELP WANTED FOR BETTER DOCUMENTATION
-------------------------------------
+====================================
+
 I aim to have better documentation for this project (current readme.MD), so any sugestions are more than welcome!
-```
+-----------------------------------------------------------------------------------------------------------------
