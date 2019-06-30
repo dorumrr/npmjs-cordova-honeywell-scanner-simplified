@@ -5,7 +5,7 @@
   },
   "deprecated": false,
   "description": "Ionic/Cordova Honeywell Scanner Simplified Plugin for the built-in barcodes scanner.",
-  "homepage": "https://github.com/dorumrr/npmjs-cordova-honeywell-scanner-simplified",
+  "homepage": "https://github.com/diegodfsd/npmjs-cordova-honeywell-scanner-simplified.git",
   "keywords": [
     "ionic",
     "cordova",
@@ -14,10 +14,10 @@
   ],
   "license": "MIT",
   "main": "www/honeywell.js",
-  "name": "cordova-honeywell-scanner-simplified",
+  "name": "cordova-honeywell-scanner-simplified2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dorumrr/npmjs-cordova-honeywell-scanner-simplified"
+    "url": "https://github.com/diegodfsd/npmjs-cordova-honeywell-scanner-simplified.git"
   },
-  "version": "1.4.2"
+  "version": "1.4.3"
 }
