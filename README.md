@@ -17,6 +17,8 @@ Tested successfully with
 
 - Honeywell CT50 Android 6.0.1 (confirmed by [pklaes](https://github.com/pklaes))
 
+- Honeywell EDA51 Android 8.1.0 (confirmed by [jalte](https://github.com/jalte))
+
 **Please [notify](https://github.com/dorumrr/npmjs-cordova-honeywell-scanner-simplified/issues/2) if you have tested with other Honeywell devices!**
 
 Usage
