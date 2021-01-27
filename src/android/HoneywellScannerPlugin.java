@@ -45,55 +45,26 @@ public class HoneywellScannerPlugin extends CordovaPlugin implements BarcodeRead
                 if (barcodeReader != null) {
                     barcodeReader.addBarcodeListener(HoneywellScannerPlugin.this);
                     try {
-                        Map<String, Object> properties = new HashMap<String, Object>();
-                        properties.put("PROPERTY_UPC_A_ENABLE", "DEC_UPCA_ENABLE");
-                        properties.put("PROPERTY_UPC_A_TRANSLATE_EAN13", "DEC_UPCA_TRANSLATE_TO_EAN13");
-                        properties.put("PROPERTY_UPC_A_COUPON_CODE_MODE_ENABLED", "DEC_COUPON_CODE_MODE");
-                        properties.put("PROPERTY_UPC_A_COMBINE_COUPON_CODE_MODE_ENABLED", "DEC_COMBINE_COUPON_CODES");
-                        properties.put("PROPERTY_UPC_A_CHECK_DIGIT_TRANSMIT_ENABLED", "DEC_UPCA_CHECK_DIGIT_TRANSMIT");
-                        properties.put("PROPERTY_UPC_A_NUMBER_SYSTEM_TRANSMIT_ENABLED", "DEC_UPCA_NUMBER_SYSTEM_TRANSMIT");
-//                        properties.put("PROPERTY_UPC_A_TWO_CHAR_ADDENDA_ENABLED", "DEC_UPCA_2CHAR_ADDENDA_ENABLED");
-//                        properties.put("PROPERTY_UPC_A_FIVE_CHAR_ADDENDA_ENABLED", "DEC_UPCA_5CHAR_ADDENDA_ENABLED");
-//                        properties.put("PROPERTY_UPC_A_ADDENDA_REQUIRED_ENABLED", "DEC_UPCA_ADDENDA_REQUIRED");
-//                        properties.put("PROPERTY_UPC_A_ADDENDA_SEPARATOR_ENABLED", "DEC_UPCA_ADDENDA_SEPARATOR");
-                        properties.put("PROPERTY_UPC_E_ENABLED", "DEC_UPCE0_ENABLED");
-                        properties.put("PROPERTY_UPC_E_E1_ENABLED", "DEC_UPCE1_ENABLED");
-                        properties.put("PROPERTY_UPC_E_EXPAND_TO_UPC_A", "DEC_UPCE_EXPAND");
-                        properties.put("PROPERTY_UPC_E_CHECK_DIGIT_TRANSMIT_ENABLED", "DEC_UPCE_CHECK_DIGIT_TRANSMIT");
-                        properties.put("PROPERTY_UPC_E_NUMBER_SYSTEM_TRANSMIT_ENABLED", "DEC_UPCE_NUMBER_SYSTEM_TRANSMIT");
-//                        properties.put("PROPERTY_UPC_E_TWO_CHAR_ADDENDA_ENABLED", "DEC_UPCE_2CHAR_ADDENDA_ENABLED");
-//                        properties.put("PROPERTY_UPC_E_FIVE_CHAR_ADDENDA_ENABLED", "DEC_UPCE_5CHAR_ADDENDA_ENABLED");
-//                        properties.put("PROPERTY_UPC_E_ADDENDA_REQUIRED_ENABLED", "DEC_UPCE_ADDENDA_REQUIRED");
-//                        properties.put("PROPERTY_UPC_E_ADDENDA_SEPARATOR_ENABLED", "DEC_UPCE_ADDENDA_SEPARATOR");
-                        properties.put("PROPERTY_EAN_8_ENABLED", "DEC_EAN8_ENABLED");
-                        properties.put("PROPERTY_EAN_8_CHECK_DIGIT_TRANSMIT_ENABLED", "DEC_EAN8_CHECK_DIGIT_TRANSMIT");
-//                        properties.put("PROPERTY_EAN_8_TWO_CHAR_ADDENDA_ENABLED", "DEC_EAN8_2CHAR_ADDENDA_ENABLED");
-//                        properties.put("PROPERTY_EAN_8_FIVE_CHAR_ADDENDA_ENABLED", "DEC_EAN8_5CHAR_ADDENDA_ENABLED");
-//                        properties.put("PROPERTY_EAN_8_ADDENDA_REQUIRED_ENABLED", "DEC_EAN8_ADDENDA_REQUIRED");
-//                        properties.put("PROPERTY_EAN_8_ADDENDA_SEPARATOR_ENABLED", "DEC_EAN8_ADDENDA_SEPARATOR");
-                        properties.put("PROPERTY_EAN_13_ENABLED", "DEC_EAN13_ENABLED");
-                        properties.put("PROPERTY_EAN_13_CHECK_DIGIT_TRANSMIT_ENABLED", "DEC_EAN13_CHECK_DIGIT_TRANSMIT");
-//                        properties.put("PROPERTY_EAN_13_TWO_CHAR_ADDENDA_ENABLED", "DEC_EAN13_2CHAR_ADDENDA_ENABLED");
-//                        properties.put("PROPERTY_EAN_13_FIVE_CHAR_ADDENDA_ENABLED", "DEC_EAN13_5CHAR_ADDENDA_ENABLED");
-//                        properties.put("PROPERTY_EAN_13_ADDENDA_REQUIRED_ENABLED", "DEC_EAN13_ADDENDA_REQUIRED");
-//                        properties.put("PROPERTY_EAN_13_ADDENDA_SEPARATOR_ENABLED", "DEC_EAN13_ADDENDA_SEPARATOR");
-                        properties.put("PROPERTY_CODABAR_CHECK_DIGIT_MODE", "DEC_CODABAR_CHECK_DIGIT_MODE");
-                        properties.put("CODABAR_CHECK_DIGIT_MODE_NO_CHECK", "noCheck");
-                        properties.put("CODABAR_CHECK_DIGIT_MODE_CHECK", "check");
-                        properties.put("CODABAR_CHECK_DIGIT_MODE_CHECK_AND_STRIP", "checkAndStrip");
-                        properties.put("PROPERTY_CODE_11_CHECK_DIGIT_MODE", "DEC_CODE11_CHECK_DIGIT_MODE");
-                        properties.put("CODE_11_CHECK_DIGIT_MODE_DOUBLE_DIGIT_CHECK", "doubleDigitCheck");
-                        properties.put("CODE_11_CHECK_DIGIT_MODE_SINGLE_DIGIT_CHECK", "singleDigitCheck");
-                        properties.put("CODE_11_CHECK_DIGIT_MODE_DOUBLE_DIGIT_CHECK_AND_STRIP", "doubleDigitCheckAndStrip");
-                        properties.put("CODE_11_CHECK_DIGIT_MODE_SINGLE_DIGIT_CHECK_AND_STRIP", "singleDigitCheckAndStrip");
-//                        properties.put("PROPERTY_INTERLEAVED_25_CHECK_DIGIT_MODE", "DEC_I25_CHECK_DIGIT_MODE");
-//                        properties.put("INTERLEAVED_25_CHECK_DIGIT_MODE_NO_CHECK", "noCheck");
-//                        properties.put("INTERLEAVED_25_CHECK_DIGIT_MODE_CHECK", "check");
-//                        properties.put("INTERLEAVED_25_CHECK_DIGIT_MODE_CHECK_AND_STRIP", "checkAndStrip");
-//                        properties.put("PROPERTY_POSTAL_2D_MODE", "DEC_POSTAL_ENABLED");
-//                        properties.put("PROPERTY_POSTAL_2D_POSTNET_CHECK_DIGIT_TRANSMIT_ENABLED", "DEC_POSTNET_CHECK_DIGIT_TRANSMIT");
-//                        properties.put("PROPERTY_POSTAL_2D_PLANET_CHECK_DIGIT_TRANSMIT_ENABLED", "DEC_PLANETCODE_CHECK_DIGIT_TRANSMIT");
-
+                        // Set Symbologies On/Off
+                        properties.put(BarcodeReader.PROPERTY_CODE_128_ENABLED, true);
+                        properties.put(BarcodeReader.PROPERTY_GS1_128_ENABLED, true);
+                        properties.put(BarcodeReader.PROPERTY_QR_CODE_ENABLED, true);
+                        properties.put(BarcodeReader.PROPERTY_CODE_39_ENABLED, true);
+                        properties.put(BarcodeReader.PROPERTY_DATAMATRIX_ENABLED, true);
+                        properties.put(BarcodeReader.PROPERTY_UPC_A_ENABLE, true);
+                        properties.put(BarcodeReader.PROPERTY_EAN_13_ENABLED, true);
+                        properties.put(BarcodeReader.PROPERTY_AZTEC_ENABLED, true);
+                        properties.put(BarcodeReader.PROPERTY_CODABAR_ENABLED, true);
+                        properties.put(BarcodeReader.PROPERTY_INTERLEAVED_25_ENABLED, true);
+                        properties.put(BarcodeReader.PROPERTY_PDF_417_ENABLED, true);
+                        properties.put(BarcodeReader.PROPERTY_DATA_PROCESSOR_LAUNCH_BROWSER, false);
+                        // Set Max Code 39 barcode length
+                        properties.put(BarcodeReader.PROPERTY_CODE_39_MAXIMUM_LENGTH, 10);
+                        // Turn on center decoding
+                        properties.put(BarcodeReader.PROPERTY_CENTER_DECODE, true);
+                        // Enable bad read response
+                        properties.put(BarcodeReader.PROPERTY_NOTIFICATION_BAD_READ_ENABLED, true);
+                        // Apply the settings
                         barcodeReader.setProperties(properties);
                         barcodeReader.claim();
                     } catch (ScannerUnavailableException e) {
