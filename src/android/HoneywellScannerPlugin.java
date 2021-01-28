@@ -44,6 +44,8 @@ public class HoneywellScannerPlugin extends CordovaPlugin implements BarcodeRead
                 barcodeReader = manager.createBarcodeReader();
                 if (barcodeReader != null) {
                     barcodeReader.addBarcodeListener(HoneywellScannerPlugin.this);
+
+                    Map<String, Object> properties = new HashMap<String, Object>();
                     try {
                         // Set Symbologies On/Off
                         properties.put(BarcodeReader.PROPERTY_CODE_128_ENABLED, true);
