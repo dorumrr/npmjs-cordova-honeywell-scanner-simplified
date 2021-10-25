@@ -11,13 +11,18 @@ Cordova: `cordova plugin add cordova-honeywell-scanner-simplified`
 Tested successfully with
 ------------------------
 
-- Honeywell ScanPal EDA50 - Android 4.4 and 7 (confirmed by [dorumrr](https://github.com/dorumrr))
-
-- Honeywell CT60 - Android 8.1.0 (confirmed by [andreicocari](https://github.com/andreicocari))
-
-- Honeywell CT50 Android 6.0.1 (confirmed by [pklaes](https://github.com/pklaes))
-
+- Honeywell EDA50 - Android 4.4 and 7 (confirmed by [dorumrr](https://github.com/dorumrr))
 - Honeywell EDA51 Android 8.1.0 (confirmed by [jalte](https://github.com/jalte))
+- Honeywell EDA51 Android 10 (confirmed by [donchurru](https://github.com/donchurru))
+- Honeywell CK65 Android 9.0 (confirmed by [katsandres](https://github.com/katsandres), [donchurru](https://github.com/donchurru))
+- Honeywell CT50 Android 6.0.1 (confirmed by [pklaes](https://github.com/pklaes))
+- Honeywell CT60 - Android 8.1.0 (confirmed by [andreicocari](https://github.com/andreicocari))
+- Honeywell CT60 - Android 9.0 (confirmed by [kulkarniswapnil](https://github.com/kulkarniswapnil))
+
+
+
+
+-
 
 **Please [notify](https://github.com/dorumrr/npmjs-cordova-honeywell-scanner-simplified/issues/2) if you have tested with other Honeywell devices!**
 
@@ -79,14 +84,3 @@ scanReleased () {
 ```
 
 For a quick implementation, you can check out the Ionic Test Application [here](https://github.com/dorumrr/npmjs-cordova-honeywell-scanner-simplified-test-app)
-
-
-
----
-
-
-HELP WANTED FOR BETTER DOCUMENTATION
-====================================
-
-I aim to have better documentation for this project (current readme.MD), so any sugestions are more than welcome!
------------------------------------------------------------------------------------------------------------------
