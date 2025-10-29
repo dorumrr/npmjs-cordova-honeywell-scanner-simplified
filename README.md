@@ -18,7 +18,7 @@ Tested successfully with
 - Honeywell CT50 Android 6.0.1 (confirmed by [pklaes](https://github.com/pklaes))
 - Honeywell CT60 - Android 8.1.0 (confirmed by [andreicocari](https://github.com/andreicocari))
 - Honeywell CT60 - Android 9.0 (confirmed by [kulkarniswapnil](https://github.com/kulkarniswapnil))
-
+- Honeywell EDA52 - Android 11 (confirmed by [Luigi-izzo](https://github.com/Luigi-izzo))
 
 
 
@@ -84,3 +84,4 @@ scanReleased () {
 ```
 
 For a quick implementation, you can check out the Ionic Test Application [here](https://github.com/dorumrr/npmjs-cordova-honeywell-scanner-simplified-test-app)
+
